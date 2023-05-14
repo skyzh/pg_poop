@@ -33,3 +33,9 @@ pgextmgr=# select '1';
  💩
 (1 row)
 ```
+
+## How does it work?
+
+pg_poop will use the `ExecutorRun` hook in Postgres and replace the output destination with pg_poop's custom destination
+pipe. In the pipe, it will find all varchar/text columns, get the size of the datum, and replace it with poop emojis of
+the same length.
