@@ -1,0 +1,5 @@
+comment = 'pg_poop'
+default_version = '0.0.1'
+module_pathname = '$libdir/pg_poop'
+relocatable = false
+superuser = true
